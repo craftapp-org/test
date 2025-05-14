@@ -18,18 +18,6 @@ env:
   CPU_SET: "0-1"
   OOM_SCORE_ADJ: "-500"
   STORAGE_LIMIT_GB: "4"
-  PROJECT_NAME: "medium-plan"
-  FRONTEND_PORT: 3000
-  BACKEND_PORT: 8000
-  DOMAIN: 44.203.250.84
-  PROJECT_DIR: "/home/ubuntu/app/${PROJECT_NAME}"
-  POSTGRES_DATA_DIR: "/opt/${PROJECT_NAME}/postgres-data"
-  CPU_LIMIT: "10000 100000"  # CPU shares and CFS quota/period
-  MEMORY_LIMIT: "10485760"   # 2GB in bytes
-  SWAP_LIMIT: "2684354560"     # 2.5GB (optional)
-  CPU_SET: "0-1"               # Which CPUs to use (optional)
-  OOM_SCORE_ADJ: "-500"
-  STORAGE_LIMIT_GB: 10  # 10GB (optional, adjust as needed)
 
 jobs:
   deploy:
